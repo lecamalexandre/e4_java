@@ -6,7 +6,6 @@ import java.sql.*;
 public class CBdd {
     
    Connection con;
-   
     public CBdd(){
     try{
     Class.forName("com.mysql.jdbc.Driver");
@@ -15,15 +14,16 @@ public class CBdd {
 //pour afficher l erreur
     }
     try{
-    //con=DriverManager.getConnection("jdbc:mysql://localhost:3306/gds","root","");
-    con=DriverManager.getConnection("jdbc:mysql://mysql-ocami.alwaysdata.net:3306/ocami_gds","ocami","nathalie35");
+    con=DriverManager.getConnection("jdbc:mysql://localhost:3306/gds","root","");
     }catch(SQLException e){System.err.println(e);}
     }
+    
+    Connection obtenirconnexion(){return con;}
 
-    public Connection getCon() {
-        return con;
+    PreparedStatement prepareStatement(String query) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-
+    
 }
     
 

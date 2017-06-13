@@ -99,5 +99,7 @@ public class CEntreprise {
 
     public String getApe() {
         return ape;
-    }   
+    }
+    
+     
 }

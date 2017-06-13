@@ -27,7 +27,7 @@ public final class CIHMGestionEntreprises {
     private final CTableEntreprises tableBDD = new CTableEntreprises();
 
     //Collection des entreprises
-    private final ArrayList<CEntreprise> collectionEntreprises = new CTableEntreprises().listeEntreprise();
+    private final ArrayList<CEntreprise> collectionEntreprises = new CTableEntreprises().selectEntreprise();
     
     //tableau
     private DefaultTableModel model;
